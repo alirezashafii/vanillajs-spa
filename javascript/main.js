@@ -5,7 +5,7 @@ const tl = gsap.timeline({
 
 tl.fromTo(
   ".hero-img",
-  { scale: 1.3, borderRadius: "0rem" },
+  { scale: 1.04, borderRadius: "0rem" },
   {
     scale: 1,
     borderRadius: "2rem",
@@ -47,8 +47,18 @@ gsap.fromTo(
 logo.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   if (document.body.classList.contains("dark")) {
+    gsap.fromTo(
+      "body",
+      { background: "#f8fafc" },
+      { background: "linear-gradient(35deg, #121314, #111111, #121314)" }
+    );
     document.querySelector(".hero-img").style.filter = "hue-rotate(90deg)";
   } else {
+    gsap.fromTo(
+      "body",
+      { background: "linear-gradient(35deg, #121314, #111111, #121314)" },
+      { background: "#f8fafc" }
+    );
     document.querySelector(".hero-img").style.filter = "hue-rotate(0deg)";
   }
 });
