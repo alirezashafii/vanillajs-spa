@@ -7,9 +7,42 @@
     <meta name="author" content="Alireza Shafii" />
     <meta name="description" content="Single-page application using only plain javascript." />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <title>Document</title>
+    <title>Gilan</title>
+    <link rel="icon" type="image/png" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet" /> 
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" defer></script>
     <script src="./javascript/main.js" type="module" defer></script>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <nav>
+        <h1>Gilan.</h1>
+        <ul>
+          <li><a href="/" class="nav__link" data-link>home</a></li>
+          <li><a href="about" class="nav__link" data-link>about</a></li>
+          <li><a href="images" class="nav__link" data-link>images</a></li>
+        </ul>
+      </nav>
+      <div class="root">
+        <div class="hero-section">
+          <img src="./assets/images/hero.png" class="hero-img" alt="Hero Shot">
+          <div class="cta">
+            <div class="cta-text">
+              <h2><span class="cta1">Greetings,</span></h2>
+              <h2><span class="cta2">fellow</span></h2>
+              <h2><span class="cta3">human.</span></h2>
+            </div>
+            <div class="cta-text">
+              <h2><span class="cta4">Leave</span></h2>
+              <h2><span class="cta5">Your &#10084;</span></h2>
+              <h2><span class="cta6">in Gilan.</span></h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
