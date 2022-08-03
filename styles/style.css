@@ -25,8 +25,10 @@ body {
 }
 
 .dark {
-  background: linear-gradient(35deg, #121314, #111111, #121314);
   color: #f8fafc;
+}
+.dark .cta-btn span {
+  color: #f8fafc !important;
 }
 
 main {
@@ -105,4 +107,83 @@ main nav h1 {
 .root .cta-text {
   display: flex;
   justify-content: center;
+}
+.root .description {
+  max-width: calc(100% - 20px);
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 6px;
+}
+.root .description p {
+  font-size: 1.6rem;
+  font-weight: 200;
+}
+.root .description div {
+  width: 100%;
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.root .description div .cta-btn {
+  position: relative;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  align-self: flex-start;
+}
+.root .description div .cta-btn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: rgba(163, 230, 53, 0.5);
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+.root .description div .cta-btn span {
+  position: relative;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  color: #121314;
+}
+.root .description div .cta-btn svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #234567;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+.root .description div .cta-btn:hover:before {
+  width: 100%;
+  background: rgba(250, 204, 21, 0.5);
+}
+.root .description div .cta-btn:hover svg {
+  transform: translateX(0);
+}
+.root .description div .cta-btn:active {
+  transform: scale(0.95);
+}
+
+footer {
+  width: 100%;
+  height: 20px;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(37deg, transparent, #A3E635, transparent);
+}
+footer h4 a {
+  font-size: 14px;
+  color: #f8fafc;
 }/*# sourceMappingURL=style.css.map */
