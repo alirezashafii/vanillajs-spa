@@ -47,10 +47,8 @@ gsap.fromTo(
 logo.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   if (document.body.classList.contains("dark")) {
-    document.querySelector(".hero-img").src = "./assets/images/hero-dark.jpg";
-    document.querySelector(".hero-img").style.objectPosition = "bottom center";
+    document.querySelector(".hero-img").style.filter = "hue-rotate(90deg)";
   } else {
-    document.querySelector(".hero-img").src = "./assets/images/hero.png";
-    document.querySelector(".hero-img").style.objectPosition = "bottom right";
+    document.querySelector(".hero-img").style.filter = "hue-rotate(0deg)";
   }
 });
