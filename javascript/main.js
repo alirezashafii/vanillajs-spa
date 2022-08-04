@@ -1,4 +1,5 @@
 // GSAP
+// Home section
 // const tl = gsap.timeline({
 //   defaults: { duration: 0.75, ease: "power3.out" },
 // });
@@ -42,6 +43,16 @@ gsap.fromTo(
   { y: "100%", opacity: 0 },
   { y: 0, opacity: 1, ease: Sine.easeOut, duration: 0.5 }
 );
+
+// Image section
+// const imageTl = gsap.timeline({
+//   defaults: { duration: 0.75, ease: "elastic.out(1, 0.4)" },
+// });
+// imageTl.fromTo(
+//   ".image-section",
+//   { scale: 0.9, y: 50 },
+//   { scale: 1, y: 0, duration: 2 }
+// );
 
 // Dark mode
 logo.addEventListener("click", () => {
