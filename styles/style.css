@@ -167,6 +167,32 @@ main nav h1 {
   padding: 20px 3px;
   font-weight: 200;
 }
+.root .image-section {
+  width: calc(100% - 20px);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 20px 3px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  -moz-column-gap: 15px;
+       column-gap: 15px;
+  row-gap: 15px;
+  justify-content: center;
+  align-content: flex-start;
+}
+.root .image-section img {
+  width: 300px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 0.5px 1px rgba(94, 94, 94, 0.1);
+  cursor: pointer;
+  transition: transform 250ms ease-in-out;
+}
+.root .image-section img:hover, .root .image-section img:active {
+  transform: scale(1.02);
+}
 
 footer {
   width: 100%;
