@@ -13,8 +13,8 @@ html {
   scroll-behavior: smooth;
 }
 
-$primary-color: #FACC15;
-$secondary-color: #A3E635;
+$primary-color: #facc15;
+$secondary-color: #a3e635;
 $main-white: #f8fafc;
 $main-black: #121314;
 $dm-color: #111827;
@@ -132,6 +132,41 @@ main {
       font-weight: 200;
     }
 
+    .scroll {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      column-gap: 10px;
+      width: 100%;
+      height: auto;
+      padding: 1rem 0;
+      // margin: 2.5rem 0;
+      cursor: default;
+      // overflow: scroll hidden;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      scroll-padding: 0px 1.25rem;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      &.active {
+        cursor: grab;
+        cursor: -webkit-grab;
+      }
+
+      img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+
     div {
       width: 100%;
       padding: 0 0 20px 0;
@@ -164,7 +199,7 @@ main {
 
       .cta-btn span {
         position: relative;
-        font-family: sans-serif;
+        font-family: "Poppins", sans-serif;
         font-size: 16px;
         font-weight: 400;
         letter-spacing: 0.05em;
@@ -205,10 +240,15 @@ footer {
   height: 20px;
   display: grid;
   place-content: center;
-  background: linear-gradient(37deg, transparent, $secondary-color, transparent);
+  background: linear-gradient(
+    37deg,
+    transparent,
+    $secondary-color,
+    transparent
+  );
 
   h4 a {
     font-size: 14px;
-    color: $main-white;
+    color: $main-black;
   }
 }

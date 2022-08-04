@@ -118,6 +118,38 @@ main nav h1 {
   font-size: 1.6rem;
   font-weight: 200;
 }
+.root .description .scroll {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  width: 100%;
+  height: auto;
+  padding: 1rem 0;
+  cursor: default;
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scroll-padding: 0px 1.25rem;
+  scrollbar-width: none;
+}
+.root .description .scroll::-webkit-scrollbar {
+  display: none;
+}
+.root .description .scroll.active {
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+.root .description .scroll img {
+  width: 200px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 5px;
+}
 .root .description div {
   width: 100%;
   padding: 0 0 20px 0;
@@ -147,7 +179,7 @@ main nav h1 {
 }
 .root .description div .cta-btn span {
   position: relative;
-  font-family: sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.05em;
@@ -181,9 +213,9 @@ footer {
   height: 20px;
   display: grid;
   place-content: center;
-  background: linear-gradient(37deg, transparent, #A3E635, transparent);
+  background: linear-gradient(37deg, transparent, #a3e635, transparent);
 }
 footer h4 a {
   font-size: 14px;
-  color: #f8fafc;
+  color: #121314;
 }/*# sourceMappingURL=style.css.map */
