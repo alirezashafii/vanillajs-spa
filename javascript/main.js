@@ -5,7 +5,7 @@ const tl = gsap.timeline({
 
 tl.fromTo(
   ".hero-img",
-  { scale: 0.8, borderRadius: "0rem" },
+  { scale: 0.9, borderRadius: "0rem" },
   {
     scale: 1,
     borderRadius: "2rem",
@@ -71,30 +71,30 @@ let scrollLeft;
 
 // Mouse Up Function
 scroll.addEventListener("mouseup", () => {
-	isDown = false;
-	scroll.classList.remove("active");
+  isDown = false;
+  scroll.classList.remove("active");
 });
 
 // Mouse Leave Function
 scroll.addEventListener("mouseleave", () => {
-	isDown = false;
-	scroll.classList.remove("active");
+  isDown = false;
+  scroll.classList.remove("active");
 });
 
 // Mouse Down Function
 scroll.addEventListener("mousedown", (e) => {
-	e.preventDefault();
-	isDown = true;
-	scroll.classList.add("active");
-	scrollX = e.pageX - scroll.offsetLeft;
-	scrollLeft = scroll.scrollLeft;
+  e.preventDefault();
+  isDown = true;
+  scroll.classList.add("active");
+  scrollX = e.pageX - scroll.offsetLeft;
+  scrollLeft = scroll.scrollLeft;
 });
 
 // Mouse Move Function
 scroll.addEventListener("mousemove", (e) => {
-	if (!isDown) return;
-	e.preventDefault();
-	let element = e.pageX - scroll.offsetLeft;
-	let scrolling = (element - scrollX) * 2;
-	scroll.scrollLeft = scrollLeft - scrolling;
+  if (!isDown) return;
+  e.preventDefault();
+  let element = e.pageX - scroll.offsetLeft;
+  let scrolling = (element - scrollX) * 2;
+  scroll.scrollLeft = scrollLeft - scrolling;
 });
