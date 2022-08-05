@@ -1,6 +1,6 @@
 const Home = () => {
   return `<div class="hero-section">
-                <img src="./assets/images/hero.png" class="hero-img" alt="Hero Shot">
+                <img src="src/assets/images/hero.png" class="hero-img" alt="Hero Shot">
                 <div class="cta">
                     <div class="cta-text">
                         <h2><span class="cta1">Greetings,</span></h2>
@@ -23,16 +23,16 @@ const Home = () => {
                     and Mazandaran province on the east. The capital is Rasht.
                 </p>
                 <article class="scroll">
-                    <img src="./assets/images/1.jpg" loading="lazy" alt="">
-                    <img src="./assets/images/2.jpg" loading="lazy" alt="">
-                    <img src="./assets/images/3.jpg" loading="lazy" alt="">
-                    <img src="./assets/images/4.jpg" loading="lazy" alt="">
-                    <img src="./assets/images/5.jpg" loading="lazy" alt="">
-                    <img src="./assets/images/6.jpg" loading="lazy" alt="">
-                    <img src="./assets/images/7.jpg" loading="lazy" alt="">
-                    <img src="./assets/images/8.jpg" loading="lazy" alt="">
-                    <img src="./assets/images/9.jpg" loading="lazy" alt="">
-                    <img src="./assets/images/10.jpg" loading="lazy" alt="">
+                    <img src="src/assets/images/1.jpg" loading="lazy" alt="">
+                    <img src="src/assets/images/2.jpg" loading="lazy" alt="">
+                    <img src="src/assets/images/3.jpg" loading="lazy" alt="">
+                    <img src="src/assets/images/4.jpg" loading="lazy" alt="">
+                    <img src="src/assets/images/5.jpg" loading="lazy" alt="">
+                    <img src="src/assets/images/6.jpg" loading="lazy" alt="">
+                    <img src="src/assets/images/7.jpg" loading="lazy" alt="">
+                    <img src="src/assets/images/8.jpg" loading="lazy" alt="">
+                    <img src="src/assets/images/9.jpg" loading="lazy" alt="">
+                    <img src="src/assets/images/10.jpg" loading="lazy" alt="">
                 </article>
                 <p>
                     Gilan was within the sphere of influence of the successive Achaemenian, 
